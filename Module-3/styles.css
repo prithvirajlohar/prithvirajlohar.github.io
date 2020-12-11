@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: maroon;
+}
+
+#menu{font-size: 40px;color:white;
+	margin-bottom: 20px;
+	font-family:Brush Script MT;
+}
+
+#dish{font-size: 1.4em;}
+
+#brand_name{margin: 0;
+	color:black;
+	font-size: 1.5em;
+	font-family:Garamond;
+}	
+
+.navbar-header{background-color: yellow;}
+
+.container-fluid{
+	border:1px solid blue;
+	background-color: yellow;
+	border-width:0px 0px 2px 0px;}
+
+.container{
+	border: none;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+.row{width: 100%;padding-left: 25px;}
+
+section{color: black;
+background-color: #bfff00}
+
+p{padding-top: 10px;font-size: 1.2em;}
+
+#nav-list{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+section{text-align: center;border:1px solid red;padding:10px;}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.col-lg-4{width:33.33%;}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px){
+	.col-md-6{width: 50%;}
+	.col-md-12{width: 100%;}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6{width: 50%;}
+	.col-sm-12{widows: 100%}
+	margin-left: 10px;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.col-xxs-12{width:100%;}
+	margin-left: 10px;
+}
