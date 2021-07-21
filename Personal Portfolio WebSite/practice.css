@@ -1,0 +1,451 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	/* font-family: 'Noto Sans KR', sans-serif; */
+}
+body{
+	/* background-color: grey; */
+	height: 100%;
+	/* width:auto; */
+	background-color:#222;
+
+}
+
+nav{
+	background-color:rgba(0, 0, 0, 0.767);
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding :0px 40px;
+	height:75px;
+	width: 100%;
+}
+nav #logo{
+	font-size: 40px;
+	font-weight:bold;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+}
+nav ul li{
+	margin:10px 10px;
+	letter-spacing: 1px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 10px;
+	border-radius:5px;
+	font-size: 20px;
+}
+nav ul li a:hover{
+	color:orange;
+	background-color:rgba(66, 61, 61, 0.651);
+}
+.menu-btn{display:none;} 
+#click{display:none;}
+
+.container{
+	position: relative;
+}
+#cover-img{
+	width:100%;
+	height: auto;
+	opacity: 0.9;
+}
+#center{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	text-align: center;
+	text-align: center;
+
+}
+#profile{
+	width: 180px;
+	height: 200px;
+	border-radius: 50%;
+}
+#name{
+	display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 4px;
+ 	animation: typing 2s steps(21, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 60px;
+    font-weight: 700;
+    border-right: 4px solid rgba(119, 29, 204, 0.925);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: rgb(121, 49, 216); 
+    }
+}
+#greet{
+	/* float:right ; */
+	font-size: 48px;
+	color: aliceblue;
+	font-weight: 800;
+	text-shadow: 2px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.education{
+	display: flex;
+	flex:1;
+	/* width:100%; */
+	justify-content: center;
+	
+}
+#eng{
+	border:1px solid grey;
+	border-radius: 5px;
+	height: 220px;
+	margin-left: 14px;
+	width:31%;
+	text-align: center;
+	background: #333;
+	border: 4px solid transparent;
+}
+#eng2{
+	border-radius: 5px;
+	height: fit-content;
+	margin: auto;
+	margin-top: 20px;
+	width:31%;
+	text-align: center;
+	background: white;
+	border: 1px solid rgb(30, 148, 7);
+}
+fieldset{
+	border:2px solid whitesmoke;
+	border-radius: 20px;
+	margin:0% 9.3%;
+	padding-bottom: 25px;
+	background-color: rgba(74, 88, 62, 0.774);
+	width: 80%;
+	justify-content: center;
+	align-self: center;
+	box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+}
+fieldset:hover{
+		box-shadow: 8px 8px 14px blue, 20px 20px 11px red, 25px 25px 18px green;
+
+}
+legend{
+	text-align: center;
+}
+legend img{
+	width:350px;
+	height: 50px;
+	background-color:whitesmoke;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+#course{
+	font-size: 20px;
+	font-weight: 400;
+	color:rgba(188, 224, 28, 0.897);
+	padding-bottom:10px;
+	padding-top: 15px;
+	/* text-decoration: underline;	 */
+
+}
+#Institute{
+	font-size: larger;
+	/* font-weight: bold; */
+	color:rgba(17, 119, 252, 0.87);
+	padding-bottom: 5px;
+}
+#marks{
+	font-size: normal;
+	font-weight: lighter;
+	font-weight: lighter;
+	padding-bottom: 5px;
+	color:antiquewhite
+}
+#years{
+	color:rgba(228, 211, 58, 0.938);
+	font-weight: lighter;
+}
+#description{
+	color: rgba(231, 226, 226, 0.863);
+	font-size: small;
+	font-weight: 100;
+
+}
+
+#certificate{
+	margin-top: 80px;
+	width:100%;
+	height: 250px;
+	background-size: cover;
+	opacity: 0.5;
+	overflow: hidden;
+}
+#cert{
+	font-size: 30px;
+	font-weight: 700;
+	color:aliceblue;
+	letter-spacing: 3px;
+}
+#cert-cont{
+	height: fit-content;
+	/* background-color:rgba(248, 90, 33, 0.87); */
+	/* background-color: rgba(236, 31, 31, 0.849); */
+	background-image: linear-gradient(to right, rgba(216, 89, 89, 0.541), rgba(255,0,0,1));
+	display: flex;
+	flex:1;
+	margin: auto;
+}
+#cert-block a{
+	color: bisque;
+	text-decoration: none;
+	font-weight:light;
+}
+#cert-block{
+	margin-top: 20px;
+	border: 5px solid transparent;
+	background-color: rgba(216, 144, 110, 0.863);
+	display: flex;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	/* height: fit-content; */
+	height: auto;
+	/* width: 30%; */
+}
+#star-1{
+	color:rgba(0, 60, 255, 0.884);
+	font-size: 29px;
+	font-weight: bolder;
+}
+#star-2{
+	color:rgba(0, 60, 255, 0.884);
+	font-size: 29px;
+	font-weight: bolder;
+
+}
+#star-desc-1{
+	margin-top: -2px;
+	font-size: large;
+	font-weight: 700;
+	color:rgba(240, 17, 10, 0.952);
+	background-color: rgba(225, 228, 79, 0.836);
+}
+#star-desc-2{
+	margin-top: -2px;
+	font-size: large;
+	font-weight: 700;
+	color:rgba(53, 14, 13, 0.952);
+	background-color: rgba(156, 204, 212, 0.836);
+
+}
+#platform-img{
+	width:120px;
+	height:110px;
+	border-radius: 10%;
+	margin: auto;
+}
+#cert-desc{
+	margin: 25px;
+	display: flex;
+	flex-direction:row;
+	color:blanchedalmond;
+}
+#cert-block:hover{
+	/* font-size: 15px; */
+	border:1px solid blueviolet;
+	/* transition: .8s; */
+}
+
+#social-icn{
+	width:85px;
+	height: 85px;
+	border-radius: 15px;
+	margin: 50px 70px;;
+}
+#social-icn:hover{
+	width:110px;
+	height: 110px;
+	border-radius: 2px;
+	transition: 0.3s;
+
+}
+#social-cont{
+	display: flex;
+	justify-content: center;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 1px solid rgba(192, 105, 105, 0.555); /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:#222; /* Set a background color */
+  color: rgba(238, 53, 53, 0.856); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color:black;
+  border: 1px solid green; /* Add a dark-grey background on hover */
+}
+#eng:hover{
+	box-shadow: 2.3px 5px rgba(141, 82, 34, 0.329);
+	padding: 1px;
+}
+
+
+footer{
+	width:99.9%	;
+	font-size: large;
+	font-weight: lighter;
+	background-color: #333;
+	text-align: center;
+	color:rgba(245, 245, 220, 0.781);
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+@media (max-width:800px){
+	#click:checked ~ ul{
+		left:0%;
+		transition: all 0.3s ease;
+	}
+
+	#click:checked ~ .menu-btn i:before{
+		content:"\f00d";
+	}
+	.menu-btn{
+		display:block;
+		font-size: 30px;
+		cursor:pointer;
+	}
+	#profile{
+		width: 120px;
+		height:130px;
+	}
+	#name{
+		font-size: 20px;;
+	}
+	#greet{
+		font-size: 20px;
+		color: aliceblue;
+		font-weight: 700;
+	}
+	.education{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#eng{
+		margin-top:15px;
+		height:fit-content;
+		width:70%;
+		text-align: center;
+		padding-bottom: 10px;
+		/* margin-right: auto; */
+	}
+	fieldset{
+		/* margin: auto; */
+		width: fit-content;
+		margin: 0px;
+		/* border:1px; */
+		padding: 0px;
+
+	}
+	#eng2{
+		width:  fit-content;
+		height: fit-content;
+		margin:20px 10px;
+	}
+
+	#cert-cont{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex:1;
+	}
+	#cert-block{
+		margin: 20px 0px 20px 0px;
+		justify-content: stretch;
+		align-items: center;
+		height: fit-content;
+		width: 92%;
+		display:flex;
+		flex:1;
+	}
+	#platform-img{
+		width:90px;
+		height: 91px;
+	}
+	fieldset:hover{	
+		box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+	}
+
+	nav ul{
+		list-style: none;
+		display: block;
+		width: 100%;
+		position:absolute;
+		top:75px;
+		left:-100%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.767);
+		padding-top: 10px;
+	}
+
+	nav ul li{
+		margin-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	nav ul li a{
+		padding-top: 10px;
+		text-align: center;
+		/* color:cyan */
+	}
+
+	nav ul li a:hover{
+		color:orange;
+		background: none;
+	}
+	#social-icn{
+		margin-top:50px;
+		margin-left:10px;
+		margin-right: 8px;
+		margin-bottom: 160px;
+	}
+
+
+
+
+}
